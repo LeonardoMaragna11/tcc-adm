@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12pt;
+}
+body, html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgb(158, 200, 255), rgb(0, 132, 255));
+
+}
+#navbar{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(46, 154, 255);
+    width: 100%;
+    z-index: 100;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.imgUser{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid rgb(139, 199, 255);
+    box-shadow: 4px 3px 5px rgb(139, 199, 255);
+}
+.card{
+    width: 220px;
+    height: 370px;
+    display: grid;
+    align-items: center;
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+.cxImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 0 0;
+    margin-bottom: 10px;
+}
+.txtFreelancer{
+    padding: 5px;
+    text-align: justify;
+}
+.btn{
+    width: 100%;
+    min-height: 40px;
+    transition: 1s;
+    background-image: linear-gradient( to right, rgb(0, 132, 255), rgb(158, 200, 255) );
+    border: none;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.btn:hover{
+    background-image: linear-gradient( to right, rgb(161, 210, 255), rgb(0, 63, 145) );
+
+}
+#cxCards{
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.nav-link{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16pt;
+    margin-right: 20px;
+}
+.cxNav{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
