@@ -11,6 +11,7 @@ body, html{
     /* width: 100%; */
     height: 100%;
     background-image: linear-gradient(rgb(158, 200, 255), rgb(0, 132, 255));
+    background-color: aliceblue;
     overflow: hidden;
 }
 #navbar{
@@ -91,10 +92,51 @@ body, html{
     justify-content: center;
     align-items: center;
     display: flex;
+    transition: 0.5s ;
+}
+#btnRes{
+    display: none;
+    border: none;
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 @media (max-width: 400px) {
     .cxNav{
-        display: block;
+        visibility: hidden;
+        position: absolute;
+        top: 65px;
+        background-color: rgb(46, 154, 255);
+        left: 0;
+        width: 50%;
+        height:calc(100vh - 65px);
+        z-index: 10;
+        text-align: left;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
     }
+    #navbar{
+        justify-content: space-around;
+    }
+    #btnRes{
+        display: flex;
+    }
+    #navbar.active .cxNav{
+        visibility: visible;
+        /* display: flex; */
+    }
+    .cxNav a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        text-align: left;
+        width: 90%;
+    }
+    
 }
