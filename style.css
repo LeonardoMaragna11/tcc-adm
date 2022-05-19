@@ -10,7 +10,7 @@ body, html{
     align-items: center;
     /* width: 100%; */
     height: 100%;
-    background-image: linear-gradient(rgb(158, 200, 255), rgb(0, 132, 255));
+    /* background-image: linear-gradient(rgb(158, 200, 255), rgb(0, 132, 255)); */
     background-color: aliceblue;
     overflow: hidden;
 }
@@ -78,35 +78,31 @@ body, html{
 #cxCards{
     display: flex;
     flex-direction: row;
-    max-width: 800px;
     overflow-y: hidden;
     overflow-x: scroll;
+    max-width: 400px;
 }
 .nav-link{
     color: aliceblue;
     text-decoration: none;
     font-size: 16pt;
-    margin-right: 20px;
+    padding-right: 20px;
 }
 .cxNav{
     justify-content: center;
     align-items: center;
     display: flex;
-    transition: all 0.5s;
+    padding: 5px;
 }
 #btnRes{
     display: none;
-    border: none;
-    background-color: transparent;
-    color: aliceblue;
-    font-size: 16pt;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+
+}
+section{
+    padding: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
     .cxNav{
         visibility: hidden;
         position: absolute;
@@ -126,18 +122,29 @@ body, html{
     }
     #btnRes{
         display: flex;
+        border: none;
+        background-color: transparent;
+        color: aliceblue;
+        font-size: 16pt;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 60px;
+        height: 60px;
     }
     #navbar.active .cxNav{
         visibility: visible;
-        transform: none;
         /* display: flex; */
     }
     .cxNav a{
-        padding: 1rem 0;
-        margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, 0.5);
         text-align: left;
-        width: 90%;
+        width: 96%;
+        padding: 10px ;
+    }
+    .cxCards{
+        width: 300px;
     }
     
 }
