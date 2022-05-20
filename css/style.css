@@ -36,18 +36,8 @@ body, html{
     height: 150px;
     border-radius: 50%;
     border: 2px solid rgb(139, 199, 255);
-    box-shadow: 4px 3px 5px rgb(139, 199, 255);
 }
-.card{
-    width: 220px;
-    height: 370px;
-    display: grid;
-    align-items: center;
-    background-color: aliceblue;
-    padding: 10px;
-    border-radius: 15px;
-    margin-left: 15px;
-}
+
 .cxImg{
     width: 100%;
     display: flex;
@@ -56,31 +46,30 @@ body, html{
     padding: 10px 0 0 0;
     margin-bottom: 10px;
 }
-.txtFreelancer{
-    padding: 5px;
-    text-align: justify;
-}
 .btn{
     width: 100%;
     min-height: 40px;
-    transition: 1s;
-    background-image: linear-gradient( to right, rgb(0, 132, 255), rgb(158, 200, 255) );
+    transition: 0.5s;
     border: none;
-    background-color: aliceblue;
+    color: aliceblue;
+    background-color: rgb(46, 154, 255);
     box-shadow: 1px 1px 3px black;
     cursor: pointer;
     color: rgb(255, 255, 255);
 }
 .btn:hover{
-    background-image: linear-gradient( to right, rgb(161, 210, 255), rgb(0, 63, 145) );
-
+    background-color: aliceblue;
+    color: rgb(46, 154, 255);
 }
 #cxCards{
+    max-width: 1000px;
+    max-height: 500px;
     display: flex;
-    flex-direction: row;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    max-width: 400px;
+    align-items: center;
+    flex-flow: row wrap;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: space-around;
 }
 .nav-link{
     color: aliceblue;
@@ -95,13 +84,34 @@ body, html{
     padding: 5px;
 }
 #btnRes{
-    display: none;
-
+    visibility: hidden;
 }
 section{
     padding: 10px;
+    margin-top: 80px;
 }
-
+.card{
+    width: 500px;
+    height: 265px;
+    background-color: rgb(143, 188, 228);
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+.cxImg{
+    width: 150px;
+    height: 150px;
+}
+.txtFreelancer{
+    padding: 5px;
+    text-align: justify;
+}
+.cxSuper{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
 @media (max-width: 600px) {
     .cxNav{
         visibility: hidden;
@@ -130,6 +140,7 @@ section{
         justify-content: center;
         align-items: center;
         text-align: center;
+        visibility: visible;
         width: 60px;
         height: 60px;
     }
@@ -144,7 +155,24 @@ section{
         padding: 10px ;
     }
     .cxCards{
-        width: 300px;
+        max-width: 300px;
     }
-    
+    .card{
+        width: 300px;
+        height: 370px;
+        display: grid;
+        align-items: center;
+        background-color: aliceblue;
+        padding: 10px;
+        border-radius: 15px;
+        margin-left: 15px;
+    }
+    .cxImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0 0 0;
+        margin-bottom: 10px;
+    }
 }
